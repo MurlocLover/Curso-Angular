@@ -1,0 +1,30 @@
+.card .card-header .card-title {
+  color: #ffffff;
+  font-weight: 100;
+}
+.card .card-title {
+  margin-bottom: 0.75rem;
+}
+.card-description {
+  background-color:rgb(2, 34, 83);
+}
+
+.table {
+  text-align: center;
+}
+.card-title {
+  margin-bottom: 1.25rem;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+.card .card-header {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
