@@ -15,6 +15,7 @@ import { NbaFormComponent } from './components/nba-form/nba-form.component';
 import { NbaPageComponent } from './components/pages/nba-page/nba-page.component';
 import { CardFormComponent } from './components/pages/card-form/card-form.component';
 import { MessagesComponent } from './components/messages/messages.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { MessagesComponent } from './components/messages/messages.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

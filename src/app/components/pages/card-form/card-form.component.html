@@ -1,38 +1,47 @@
 <form action="">
 <div>
   <div class=" card">
-    <div class=" card-header">
-      <h4 class=" card-title">Jogadores Card</h4>
-    </div>
-    <div class=" card-body">
-      <div class=" table-responsive">
-        <table class=" table tablesorter" id="">
-          <div id="imagem"><img src="" alt=""></div>
-          <thead class="card-description">
-            <tr>
-              {{ name }}
-            </tr>
-            </thead>
+    <thead>
+      <tr class="row">
+        {{ name }}
+      </tr>
+      </thead>
+    <div>
+      <div>
+        <div id="imagem"><img src="../../../../assets/9441i1.png" alt="Lebron James"></div>
+        <table>
           <tbody>
-            <thead class="card-description"><tr>Atributos</tr></thead>
+            <thead><tr class="row">Atributos</tr></thead>
             <tr>
               <th>Altura</th>
+            </tr>
+            <tr class="col">
+              <td>{{ altura }}</td>
+            </tr>
+            <tr>
               <th>Peso</th>
             </tr>
-            <tr>
-              <td id="altura">2.06</td>
-              <td>110</td>
+            <tr class="col">
+              <td>{{ peso }}</td>
             </tr>
-            <thead class="card-description"><tr>Estatísticas</tr></thead>
+            <thead><tr class="row">Estatísticas</tr></thead>
             <tr>
               <th> Pontos </th>
+            </tr>
+            <tr class="col">
+              <td > {{ pts }} </td>
+            </tr>
+            <tr >
               <th> Rebotes </th>
-              <th> Assistencias </th>
+            </tr>
+            <tr class="col">
+              <td>{{ rebs }}</td>
             </tr>
             <tr>
-              <td>30.2</td>
-              <td>8.2</td>
-              <td>5.4</td>
+              <th> Assistencias </th>
+            </tr>
+            <tr class="col">
+              <td>{{ assists }}</td>
             </tr>
           </tbody>
         </table>

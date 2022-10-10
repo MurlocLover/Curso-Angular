@@ -5,13 +5,7 @@
 .card .card-title {
   margin-bottom: 0.75rem;
 }
-.card-description {
-  background-color:rgb(2, 34, 83);
-}
 
-.table {
-  text-align: center;
-}
 .card-title {
   margin-bottom: 1.25rem;
 }
@@ -27,4 +21,28 @@ form {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+#imagem {
+  display: flex;
+  position: absolute;
+  background-size: cover;
+  overflow: hidden;
+  padding: 0px;
+  margin-left: -224px;
+  margin-bottom: 0px;
+  height: 301px;
+}
+
+tr.row {
+  background-color:rgb(2, 34, 83);
+  font-size: 24px;
+  height: 7vh;
+  position: relative;
+  border: solid 2px;
+  text-shadow: rgb(3, 3, 3) 2px 2px 2px;
+}
+
+.col {
+  text-align: center;
 }

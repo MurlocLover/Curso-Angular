@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
-import { Moment } from '../Moment';
+import { Moment } from 'src/app/Moment';
 
 @Component({
   selector: 'app-moment-form',
@@ -30,7 +30,7 @@ export class MomentFormComponent implements OnInit {
   }
 
   get description() {
-    return this.momentForm.get('title')!;
+    return this.momentForm.get('description')!;
   }
 
   onFileSelect(event: any) {
