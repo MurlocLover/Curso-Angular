@@ -1,52 +1,36 @@
 <form action="">
-<div>
-  <div class=" card">
-    <thead>
-      <tr class="row">
-        {{ name }}
-      </tr>
-      </thead>
-    <div>
-      <div>
-        <div id="imagem"><img src="../../../../assets/9441i1.png" alt="Lebron James"></div>
-        <table>
-          <tbody>
-            <thead><tr class="row">Atributos</tr></thead>
-            <tr>
-              <th>Altura</th>
-            </tr>
-            <tr class="col">
-              <td>{{ altura }}</td>
-            </tr>
-            <tr>
-              <th>Peso</th>
-            </tr>
-            <tr class="col">
-              <td>{{ peso }}</td>
-            </tr>
-            <thead><tr class="row">Estatísticas</tr></thead>
-            <tr>
-              <th> Pontos </th>
-            </tr>
-            <tr class="col">
-              <td > {{ pts }} </td>
-            </tr>
-            <tr >
-              <th> Rebotes </th>
-            </tr>
-            <tr class="col">
-              <td>{{ rebs }}</td>
-            </tr>
-            <tr>
-              <th> Assistencias </th>
-            </tr>
-            <tr class="col">
-              <td>{{ assists }}</td>
-            </tr>
-          </tbody>
-        </table>
+<div class="col-sm-6">
+  <div class="card">
+    <div id="imagem"><img src="../../../../assets/9441i1.png" alt="Lebron James"></div>
+      <div class=" card-body">
+        <h3 class="card-title">{{ name }}</h3>
+        <div>
+          <table>
+            <h4 class="me-5">Atributos</h4>
+                <p class="card-text">Altura</p>
+              <tr>
+                <td class="card-dats">{{ altura }}</td>
+              </tr>
+                <p class="card-text">Peso</p>
+              <tr>
+                <td class="card-dats">{{ peso }}</td>
+              </tr>
+              <h4 class="me-5">Estatísticas</h4>
+                <p class="card-text">Pontos</p>
+              <tr>
+                <td class="card-dats"> {{ pts }} </td>
+              </tr>
+                <p class="card-text">Rebotes</p>
+              <tr>
+                <td class="card-dats">{{ rebs }}</td>
+              </tr>
+                <p class="card-text">Assistencias</p>
+              <tr>
+                <td class="card-dats">{{ assists }}</td>
+              </tr>
+          </table>
+        </div>
       </div>
-    </div>
   </div>
 </div>
 </form>

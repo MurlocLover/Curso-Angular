@@ -1,20 +1,11 @@
-.card .card-header .card-title {
-  color: #ffffff;
+.card {
+  color: rgba(255, 255, 255, 0.8);
   font-weight: 100;
-}
-.card .card-title {
   margin-bottom: 0.75rem;
-}
-
-.card-title {
-  margin-bottom: 1.25rem;
 }
 
 *, ::before, ::after {
   box-sizing: border-box;
-}
-.card .card-header {
-  color: rgba(255, 255, 255, 0.8);
 }
 
 form {
@@ -28,21 +19,46 @@ form {
   position: absolute;
   background-size: cover;
   overflow: hidden;
-  padding: 0px;
-  margin-left: -224px;
+  padding: 40px;
+  margin-left: -96px;
   margin-bottom: 0px;
-  height: 301px;
+  height: 357px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 327px;
+  border-top-right-radius: 725px;
+  border-bottom-right-radius: 122px;
 }
 
-tr.row {
+.me-5 {
+  text-align: center;
+  background-color: rgb(2, 34, 83);
+  padding: 2px 200px 5px 180px;
+  border: solid 2px;
+  margin: 1px;
+  text-shadow: black 2px 2px 2px;
+}
+
+.card-title {
+  margin-bottom: 1.25rem;
   background-color:rgb(2, 34, 83);
   font-size: 24px;
   height: 7vh;
-  position: relative;
   border: solid 2px;
   text-shadow: rgb(3, 3, 3) 2px 2px 2px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2px;
+  padding: 5px 20px 30px 150px;
+  width: 104%;
 }
 
-.col {
+.card-text {
   text-align: center;
+  font-style: italic;
+}
+
+.card-dats {
+  text-align: center;
+  color: black;
+  text-shadow: black 2px 2px 2px;
 }

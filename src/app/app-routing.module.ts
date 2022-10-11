@@ -5,6 +5,7 @@ import { CardFormComponent } from './components/pages/card-form/card-form.compon
 import { HomeComponent } from './components/pages/home/home.component';
 import { NbaPageComponent } from './components/pages/nba-page/nba-page.component';
 import { NewMomentComponent } from './components/pages/new-moment/new-moment.component';
+import { MomentFormComponent } from './components/moment-form/moment-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'nba', component: NbaPageComponent},
   { path: 'card', component: CardFormComponent},
   { path: 'moments/new', component: NewMomentComponent},
+  { path: 'moments/:id', component: MomentFormComponent },
 ];
 
 @NgModule({
