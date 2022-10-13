@@ -6,6 +6,7 @@
 
 *, ::before, ::after {
   box-sizing: border-box;
+  color: #dec129;
 }
 
 form {
@@ -20,13 +21,9 @@ form {
   background-size: cover;
   overflow: hidden;
   padding: 40px;
-  margin-left: -96px;
-  margin-bottom: 0px;
-  height: 357px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 327px;
-  border-top-right-radius: 725px;
-  border-bottom-right-radius: 122px;
+  margin-left: -310px;
+  margin-top: -41px;
+  height: 451px;
 }
 
 .me-5 {
@@ -34,7 +31,7 @@ form {
   background-color: rgb(2, 34, 83);
   padding: 2px 200px 5px 180px;
   border: solid 2px;
-  margin: 1px;
+  margin: -9px;
   text-shadow: black 2px 2px 2px;
 }
 
@@ -42,23 +39,35 @@ form {
   margin-bottom: 1.25rem;
   background-color:rgb(2, 34, 83);
   font-size: 24px;
+  text-align: center;
   height: 7vh;
   border: solid 2px;
   text-shadow: rgb(3, 3, 3) 2px 2px 2px;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 2px;
-  padding: 5px 20px 30px 150px;
+  margin: -7px;
+  padding: 20px 150px 65px 150px;
   width: 104%;
 }
 
 .card-text {
   text-align: center;
   font-style: italic;
+  font-size: 20px;
+  padding: 0em;
+  margin: 1em;
+  border: solid 2px;
+  color: black;
 }
 
 .card-dats {
   text-align: center;
+  color: black;
+  text-shadow: black 2px 2px 2px;
+}
+
+span {
+  text-align: right;
   color: black;
   text-shadow: black 2px 2px 2px;
 }

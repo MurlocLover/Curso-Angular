@@ -14,9 +14,9 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  allMoments: Moment[] = []
-  moments: Moment[] = []
-  baseApiUrl = environment.baseApiUrl
+  allMoments: Moment[] = [];
+  moments: Moment[] = [];
+  baseApiUrl = environment.baseApiUrl;
 
   faSearch = faSearch;
   searchTerm: string = "";
@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.momentService.getMoments().subscribe((items) => {
 
-      const data = items.data
+      const data = items.data;
 
       data.map((item) => {
         item.created_at = new Date(item.created_at!).toLocaleDateString(
@@ -45,8 +45,8 @@ export class HomeComponent implements OnInit {
     const target = e.target as HTMLInputElement
     const value = target.value
 
-    this.moments = this.allMoments.filter(moment => {
-      return moment.title.toLowerCase().includes(value);
+    this.moments = this.allMoments.filter((moment) => {
+      return moment.title.toLowerCase().includes(value)
     });
   }
 }

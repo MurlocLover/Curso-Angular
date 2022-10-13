@@ -16,6 +16,8 @@ import { NbaPageComponent } from './components/pages/nba-page/nba-page.component
 import { CardFormComponent } from './components/pages/card-form/card-form.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MomentComponent } from './components/pages/moment/moment.component';
+import { EditMomentComponent } from './components/pages/edit-moment/edit-moment.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NbaFormComponent,
     NbaPageComponent,
     CardFormComponent,
-    MessagesComponent
+    MessagesComponent,
+    MomentComponent,
+    EditMomentComponent
   ],
   imports: [
     BrowserModule,

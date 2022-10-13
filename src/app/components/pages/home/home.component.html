@@ -1,7 +1,7 @@
 <div class="home-container">
   <h1>Veja o que estão Compartilhando</h1>
   <!-- Form de busca -->
- <div class="class">
+ <div class="search-container">
   <form>
     <fa-icon [icon]="faSearch"></fa-icon>
     <input type="text" placeholder="Busque por um momento..." (input)="search($event)">
@@ -16,7 +16,7 @@
         <h3>{{ moment.title }}</h3>
         <p class="date">Em: {{moment.created_at}}</p>
         <p>Comentários: {{moment.comments!.length}}</p>
-        <p><a routerLink="moments/{{moment.id}}">Detalhes</a></p>
+        <p><a routerLink="moments/{{ moment.id }}">Detalhes</a></p>
       </div>
     </div>
   </div>
