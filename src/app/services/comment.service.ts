@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { environment } from 'src/environments/environment.prod';
-import { Comment } from '@angular/compiler';
+import { Comment } from '../Comment';
 import { Response } from '../Response';
 
 @Injectable({
@@ -17,6 +17,7 @@ export class CommentService {
   constructor(private http: HttpClient) { }
 
   createComment(data: Comment): Observable<Response<Comment>> {
-    return this.http.post<Response<Comment>>(this.apiUrl, data);
+    const url = `${this.apiUrl}/${data.id}/comments`;
+    return this.http.post<Response<Comment>>(url, data);
   }
 }

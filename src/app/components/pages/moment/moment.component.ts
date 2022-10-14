@@ -6,7 +6,7 @@ import { MessagesService } from 'src/app/services/messages.service';
 import { Moment } from 'src/app/Moment';
 import { CommentService } from 'src/app/services/comment.service';
 import { environment } from 'src/environments/environment';
-
+import { Comment } from 'src/app/Comment';
 import { faTimes, faEdit } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -22,9 +22,7 @@ export class MomentComponent implements OnInit {
   faTimes = faTimes;
   faEdit = faEdit;
 
-  commentForm!: FormGroup
-
-
+  commentForm!: FormGroup;
 
 
   constructor(
@@ -72,7 +70,7 @@ export class MomentComponent implements OnInit {
 
       const data: Comment = this.commentForm.value;
 
-      data.momentId = Number(this.moment!.id);
+      data.momentId = Number (this.moment!.id);
 
       await this.commentService
       .createComment(data)
